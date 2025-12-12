@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialGen AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Default Theme (Noir) */
+        --bg-page: #000000;
+        --bg-card: #111111;
+        --bg-input: #1A1A1A;
+        --text-primary: #E8D1C5;
+        --text-secondary: #9CA3AF;
+        --accent: #452829;
+        --accent-hover: #5e3839;
+        --border-color: #333333;
+        --ring-color: #E8D1C5;
+      }
+
+      /* Light Theme (Minimal) */
+      [data-theme='light'] {
+        --bg-page: #F9FAFB;
+        --bg-card: #FFFFFF;
+        --bg-input: #F3F4F6;
+        --text-primary: #111827;
+        --text-secondary: #4B5563;
+        --accent: #2563EB; /* Modern Blue */
+        --accent-hover: #1D4ED8;
+        --border-color: #E5E7EB;
+        --ring-color: #2563EB;
+      }
+
+      body {
+        font-family: 'Outfit', sans-serif;
+        background-color: var(--bg-page);
+        color: var(--text-primary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      h1, h2, h3, h4, h5, h6, .font-serif {
+        font-family: 'DM Serif Display', serif;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--text-secondary);
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.1/",
+        "react": "https://aistudiocdn.com/react@^19.2.1",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
